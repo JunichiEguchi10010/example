@@ -1,0 +1,12 @@
+.container {
+  max-width: 1000px; /*最大幅を固定*/
+  margin-left: auto;
+  margin-right: auto;
+  background: #eee;
+}
+
+/* 画像のフルード化 */
+img{
+  max-width: 100%;
+  height: auto;  /* 画像のアスペクト比(縦横比)を維持するための設定 */
+}
