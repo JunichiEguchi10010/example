@@ -1,0 +1,20 @@
+.row {
+  max-width: 1000px; /*最大幅を固定*/;
+  margin: 30px auto;
+  background: #eee;
+}
+
+/*親ボックス640px・各カラム300px・段間40px のデザインカンプをを想定して
+pxから%に値を変換して可変対応*/
+.row {
+	display: flex;
+	justify-content: space-between;
+	max-width: 640px;
+	margin: 0 auto;
+	border: 1px dashed #999;
+
+}
+.col2 {
+  width: calc((300 / 640) * 100%); /*46.875%*/
+	background: #e7e7e7;
+}
