@@ -1,0 +1,10 @@
+.container {
+  max-width: 1000px; /*最大幅を固定*/;
+  margin: 30px auto;
+  background: #eee;
+}
+
+.col2 {
+	width: 50%; /*親要素のcontent-boxサイズを基準として計算する*/
+	border: 1px dashed #999;
+}
