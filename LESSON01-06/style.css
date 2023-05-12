@@ -1,0 +1,21 @@
+.row {
+  max-width: 1000px; /*最大幅を固定*/;
+  margin: 30px auto;
+  background: #eee;
+}
+
+/*親ボックス640px（padding:20pxを含む）・各カラム290px・段間20px のデザインカンプをを想定してpxから%に値を変換して可変対応
+640-40(padding両サイド)-20(段間)/2=290*/
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	max-width: 640px; /*paddingを含んだサイズ*/
+	margin: 0 auto;
+	padding: 20px; /*親ボックスに20pxのpaddingが付く*/
+	border: 1px dashed #999;
+}
+.col2 {
+	width:  calc((290 / 600) * 100%); /*48.3333%*/
+	background: #e7e7e7;
+}
