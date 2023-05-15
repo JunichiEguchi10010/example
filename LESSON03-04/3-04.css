@@ -10,14 +10,16 @@
 }
 .btns__item {
   display: inline-block; /*横並びするようにインラインブロック化*/
+  width: 80%; /*.btnから移動*/
+  max-width: 300px; /*.btnから移動*/
   margin: 10px;
   border: 1px dashed #999;
 }
 /*ボタン形状にするための指定を追加*/
 .btn {
   display: block; /*a要素のブロック化*/
-  width: 80%;
-  max-width: 300px;
+  /* width: 80%;.btnへ移動 */
+  /* max-width: 300px;.btnへ移動 */
   padding: 15px;
   background: skyblue;
   border-radius: 8px;
