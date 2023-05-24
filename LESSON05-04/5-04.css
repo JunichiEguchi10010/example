@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr auto auto 50px;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
     "main"
     "lnav"
@@ -24,7 +24,7 @@
   .container {
     grid-template-columns: 24% 1fr 24%;
     grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
+    grid-template-areas:
       "header header header"
       "lnav main sidebar"
       "footer footer footer";
