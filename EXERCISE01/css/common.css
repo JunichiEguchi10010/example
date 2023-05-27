@@ -317,6 +317,7 @@ SP用の指定の打ち消しが多数必要となってしまいます。
     display: inline-block;
     border-left: 1px solid #707070;
     border-bottom: 0;
+    /* sp用の下線を消す */
   }
   .footer__menu  a {
     padding: 0 1em;
