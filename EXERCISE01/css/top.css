@@ -57,12 +57,13 @@
 }
 .serviceList__item {
   max-width: 400px;
+  /* 参考 containerがmax-width:1120px;なので400pxにはならない */
   margin: 20px auto 0;
   background: #fff;
   box-shadow: 0 0 6px rgba(0,0,0,.1);
 }
 .serviceList__thumb img{
-  max-width: none;
+  max-width: none;  /* デフォルト値「none」を明示的に指定 */
   width: 100%;
 }
 .serviceList__data {
