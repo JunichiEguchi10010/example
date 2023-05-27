@@ -7,7 +7,7 @@
 /* mainVisual
 ----------------------------------------*/
 .mainVisual {
-  background: #37952F;
+  background: #37952f;
   color: #fff;
 }
 .mainVisual__inner {
@@ -24,7 +24,7 @@
   font-weight: bold;
   line-height: 2;
 }
-@media screen and (min-width: 768px),print {
+@media screen and (min-width: 768px), print {
   .mainVisual {
     padding: 40px 0;
   }
@@ -60,10 +60,10 @@
   /* シングルカラム用の400px */
   margin: 20px auto 0;
   background: #fff;
-  box-shadow: 0 0 6px rgba(0,0,0,.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
-.serviceList__thumb img{
-  max-width: none;  /* デフォルト値「none」を明示的に指定 */
+.serviceList__thumb img {
+  max-width: none; /* デフォルト値「none」を明示的に指定 */
   width: 100%;
 }
 .serviceList__data {
@@ -80,7 +80,7 @@
 .serviceList__btn {
   margin: 20px;
 }
-@media screen and (min-width: 768px),print {
+@media screen and (min-width: 768px), print {
   .serviceList {
     flex-direction: row;
     justify-content: space-between;
@@ -135,7 +135,7 @@
   border-right: 2px solid;
   transform: rotate(45deg);
 }
-@media screen and (min-width: 768px),print {
+@media screen and (min-width: 768px), print {
   .pickupList__item {
     width: calc((100% - 40px) / 3);
   }
@@ -149,10 +149,10 @@
     transition: color 0.3s;
   }
   .pickupList__item a:hover .pickupList__title {
-    color: #37952F;
+    color: #37952f;
   }
 }
-@media screen and (min-width: 922px),print {
+@media screen and (min-width: 922px), print {
   .pickupList__item {
     width: calc((100% - 60px) / 4);
   }
