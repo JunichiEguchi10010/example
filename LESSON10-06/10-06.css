@@ -104,6 +104,7 @@ html,body {
 	}
 	.mainVisual__ttl {
 		font-size: min(4.375vw,70px);
+		/* vwとpxで指定はエラーが出るが作用には影響しない */
 	}
 	.mainVisual__ttl::after {
 		margin-left: calc((100vw - 1080px) / 2 * -1 - 15px);
