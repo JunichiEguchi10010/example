@@ -86,7 +86,7 @@ select:focus,
 input[type="number"],
 input[type="password"] {
   outline: none;
-  box-shadow: 0 0 5px rgba(55,149,47,0.7);
+  box-shadow: 0 0 5px rgba(55, 149, 47, 0.7);
 }
 /*エラー時*/
 .is-error input[type="text"],
@@ -97,9 +97,9 @@ input[type="password"] {
 .is-error input[type="password"],
 .is-error textarea,
 .is-error select,
-.is-error .selectWrap{
-  color: #DF5656;
-  border-color: #DF5656;
+.is-error .selectWrap {
+  color: #df5656;
+  border-color: #df5656;
 }
 
 /*select
@@ -121,8 +121,9 @@ input[type="password"] {
   border-bottom: 2px solid;
   transform: rotate(45deg);
 }
-select::-ms-expand { /*IEでもselectの矢印を消す*/
-　display: none;
+select::-ms-expand {
+  /*IEでもselectの矢印を消す*/
+  　display: none;
 }
 
 /*radio, checkbox
@@ -133,8 +134,8 @@ input[type="checkbox"] {
   position: absolute; /*本来の配置から切り離す*/
 }
 /*クリック範囲*/
-input[type="radio"]+span,
-input[type="checkbox"]+span {
+input[type="radio"] + span,
+input[type="checkbox"] + span {
   display: inline-block;
   position: relative;
   margin: 0 2em 0 0;
@@ -144,32 +145,32 @@ input[type="checkbox"]+span {
   cursor: pointer;
 }
 /*フォーカス時*/
-input[type="radio"]:focus+span,
-input[type="checkbox"]:focus+span {
+input[type="radio"]:focus + span,
+input[type="checkbox"]:focus + span {
   outline: none;
-  box-shadow: 0 0 5px rgba(55,149,47,0.7);
+  box-shadow: 0 0 5px rgba(55, 149, 47, 0.7);
 }
 
 /*ラジオボタンスタイル*/
-input[type="radio"]+span:before {
+input[type="radio"] + span:before {
   content: "";
   position: absolute;
   top: 0.25em;
   left: 0;
   width: 1.375em;
   height: 1.375em;
-	border: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 50%;
   line-height: 1;
   background: #fff;
 }
 /*ラジオボタンチェック印（未選択）*/
-input[type="radio"]+span:after {
+input[type="radio"] + span:after {
   content: "";
   display: none;
 }
 /*ラジオボタンチェック印（選択）*/
-input[type="radio"]:checked+span:after {
+input[type="radio"]:checked + span:after {
   display: block;
   position: absolute;
   top: 0.45em;
@@ -179,11 +180,11 @@ input[type="radio"]:checked+span:after {
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  background: #37952F;
+  background: #37952f;
   line-height: 1;
 }
 /*チェックボックススタイル*/
-input[type="checkbox"]+span:before {
+input[type="checkbox"] + span:before {
   position: absolute;
   top: 0.3em;
   left: 0;
@@ -196,12 +197,12 @@ input[type="checkbox"]+span:before {
   vertical-align: middle;
 }
 /*チェックボックス未チェック時*/
-input[type="checkbox"]+span:after {
+input[type="checkbox"] + span:after {
   content: "";
   display: none;
 }
 /*チェックボックスチェック時*/
-input[type="checkbox"]:checked+span:after {
+input[type="checkbox"]:checked + span:after {
   display: block;
   position: absolute;
   top: 0.3em;
@@ -209,8 +210,8 @@ input[type="checkbox"]:checked+span:after {
   width: 0.5em;
   height: 1em;
   content: "";
-  border-bottom: 3px solid #37952F;
-  border-right: 3px solid #37952F;
+  border-bottom: 3px solid #37952f;
+  border-right: 3px solid #37952f;
   transform: rotate(45deg);
 }
 
@@ -222,7 +223,7 @@ input[type="checkbox"]:checked+span:after {
   font-weight: 500;
   font-size: 18px;
 }
-@media screen and (min-width:768px),print {
+@media screen and (min-width: 768px), print {
   .inputLabel {
     display: flex;
     justify-content: space-between;
@@ -241,7 +242,7 @@ input[type="checkbox"]:checked+span:after {
   display: inline-block;
   margin-left: 10px;
   padding: 0 10px;
-  background: #37952F;
+  background: #37952f;
   color: #fff;
   font-weight: normal;
   font-size: 12px;
@@ -256,10 +257,10 @@ input[type="checkbox"]:checked+span:after {
 }
 
 /*名前・フリガナ*/
-.nameLayout >* + *{
+.nameLayout > * + * {
   margin-top: 10px;
 }
-@media screen and (min-width:768px),print {
+@media screen and (min-width: 768px), print {
   .nameLayout {
     display: flex;
     justify-content: space-between;
@@ -298,7 +299,6 @@ input[type="checkbox"]:checked+span:after {
   vertical-align: middle;
 }
 
-
 /*----------------------------------------
 	個人情報保護方針チェック
 ----------------------------------------*/
@@ -311,7 +311,7 @@ input[type="checkbox"]:checked+span:after {
   margin-top: 20px;
   text-align: center;
 }
-@media screen and (min-width:768px),print {
+@media screen and (min-width: 768px), print {
   .privacyBox {
     margin: 80px 0;
     padding: 40px;
@@ -337,8 +337,8 @@ input[type="checkbox"]:checked+span:after {
   padding: 20px;
   width: 100%;
   max-width: 400px;
-  border: 2px solid #FF7600;
-  background: #FF7600;
+  border: 2px solid #ff7600;
+  background: #ff7600;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
