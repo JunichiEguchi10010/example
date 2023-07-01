@@ -26,22 +26,96 @@
   vertical-align: inherit;
 }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header, main, menu, nav, section,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
 }
 
-header, footer, article, section, aside, main, nav, menu, figure, figcaption {
+header,
+footer,
+article,
+section,
+aside,
+main,
+nav,
+menu,
+figure,
+figcaption {
   display: block;
 }
 
-span, small, strong, em, b, i {
+span,
+small,
+strong,
+em,
+b,
+i {
   color: inherit;
 }
 
@@ -67,15 +141,18 @@ table {
   border-spacing: 0;
 }
 
-caption, th {
+caption,
+th {
   text-align: left;
 }
 
-input, select {
+input,
+select {
   vertical-align: middle;
 }
 
-input, textarea {
+input,
+textarea {
   margin: 0;
   padding: 0;
 }
@@ -99,24 +176,29 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: auto;
-  color: #341E12;
+  color: #341e12;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.75;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.5;
 }
 
 a {
-  color: #341E12;
+  color: #341e12;
   text-decoration: underline;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 a:hover {
-  color: #A88E25;
+  color: #a88e25;
 }
 
 img {
@@ -130,7 +212,7 @@ img.self-size {
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   display: block;
   width: 100%;
   border: 0;
@@ -142,16 +224,16 @@ button {
 	Form Parts
 ----------------------------------------*/
 /*各フォーム部品の基本スタイルを上書きします*/
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=url],
-input[type=search],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
 textarea,
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   /*ブラウザ標準スタイルを無効にする*/
   width: 100%;
   padding: 10px 20px;
@@ -161,8 +243,8 @@ select {
   font-family: inherit;
 }
 
-input[type=number],
-input[type=password] {
+input[type="number"],
+input[type="password"] {
   width: 100%;
   padding: 10px 20px;
   background: #fff;
@@ -171,32 +253,32 @@ input[type=password] {
 }
 
 /*フォーカス時*/
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-input[type=url]:focus,
-input[type=search]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
 textarea:focus,
 select:focus,
-input[type=number],
-input[type=password] {
+input[type="number"],
+input[type="password"] {
   outline: none;
   -webkit-box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
-          box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
+  box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
 }
 
 /*エラー時*/
-.is-error input[type=text],
-.is-error input[type=email],
-.is-error input[type=tel],
-.is-error input[type=url],
-.is-error input[type=number],
-.is-error input[type=password],
+.is-error input[type="text"],
+.is-error input[type="email"],
+.is-error input[type="tel"],
+.is-error input[type="url"],
+.is-error input[type="number"],
+.is-error input[type="password"],
 .is-error textarea,
 .is-error select,
 .is-error .select-wrap {
-  color: #F7320E;
-  border-color: #F7320E;
+  color: #f7320e;
+  border-color: #f7320e;
 }
 
 /*select
@@ -218,7 +300,7 @@ input[type=password] {
   border-right: 2px solid;
   border-bottom: 2px solid;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 select::-ms-expand {
@@ -228,8 +310,8 @@ select::-ms-expand {
 
 /*radio, checkbox
 ------------------------------------*/
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   opacity: 0;
   /*透明にして見えなくする*/
   position: absolute;
@@ -237,8 +319,8 @@ input[type=checkbox] {
 }
 
 /*クリック範囲*/
-input[type=radio] + span,
-input[type=checkbox] + span {
+input[type="radio"] + span,
+input[type="checkbox"] + span {
   display: inline-block;
   position: relative;
   margin: 0 2em 0 0;
@@ -249,35 +331,35 @@ input[type=checkbox] + span {
 }
 
 /*フォーカス時*/
-input[type=radio]:focus + span,
-input[type=checkbox]:focus + span {
+input[type="radio"]:focus + span,
+input[type="checkbox"]:focus + span {
   outline: none;
   -webkit-box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
-          box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
+  box-shadow: 0 0 5px rgba(168, 142, 37, 0.7);
 }
 
 /*ラジオボタンスタイル*/
-input[type=radio] + span:before {
+input[type="radio"] + span:before {
   content: "";
   position: absolute;
   top: 0.25em;
   left: 0;
   width: 1.375em;
   height: 1.375em;
-  border: 1px solid #341E12;
+  border: 1px solid #341e12;
   border-radius: 50%;
   line-height: 1;
   background: #fff;
 }
 
 /*ラジオボタンチェック印（未選択）*/
-input[type=radio] + span:after {
+input[type="radio"] + span:after {
   content: "";
   display: none;
 }
 
 /*ラジオボタンチェック印（選択）*/
-input[type=radio]:checked + span:after {
+input[type="radio"]:checked + span:after {
   display: block;
   position: absolute;
   top: 0.45em;
@@ -287,32 +369,32 @@ input[type=radio]:checked + span:after {
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  background: #341E12;
+  background: #341e12;
   line-height: 1;
 }
 
 /*チェックボックススタイル*/
-input[type=checkbox] + span:before {
+input[type="checkbox"] + span:before {
   position: absolute;
   top: 0.3em;
   left: 0;
   content: "";
   width: 1.25em;
   height: 1.25em;
-  border: 1px solid #341E12;
+  border: 1px solid #341e12;
   background: #fff;
   line-height: 1;
   vertical-align: middle;
 }
 
 /*チェックボックス未チェック時*/
-input[type=checkbox] + span:after {
+input[type="checkbox"] + span:after {
   content: "";
   display: none;
 }
 
 /*チェックボックスチェック時*/
-input[type=checkbox]:checked + span:after {
+input[type="checkbox"]:checked + span:after {
   display: block;
   position: absolute;
   top: 0.3em;
@@ -320,10 +402,10 @@ input[type=checkbox]:checked + span:after {
   width: 0.5em;
   height: 1em;
   content: "";
-  border-bottom: 3px solid #341E12;
-  border-right: 3px solid #341E12;
+  border-bottom: 3px solid #341e12;
+  border-right: 3px solid #341e12;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /*------------------------------------------------------------------------
@@ -353,11 +435,11 @@ input[type=checkbox]:checked + span:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 110px;
   background: url(../img/bg_top_header.jpg) center center/cover;
 }
@@ -382,8 +464,8 @@ input[type=checkbox]:checked + span:after {
 @media screen and (min-width: 768px), print {
   .header {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     height: 200px;
     background: url(../img/bg_top_header.jpg) center center/auto 100% repeat-x;
   }
@@ -398,7 +480,7 @@ input[type=checkbox]:checked + span:after {
 ------------------------------------------------------ */
 /*IE11無視のプロジェクトなのでmin関数でレスポンシブ時のサイズバランスを調整しています*/
 .top-header {
-  border-bottom: min((30 / 375) * 100vw, 30px) solid #F5EFD7;
+  border-bottom: min((30 / 375) * 100vw, 30px) solid #f5efd7;
 }
 .top-header::after {
   content: "";
@@ -439,20 +521,20 @@ input[type=checkbox]:checked + span:after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0;
   }
 
   .top-header__logo {
-    width: calc((424/1084)*100%);
+    width: calc((424 / 1084) * 100%);
   }
 
   .top-header__txt {
-    width: calc((624/1084)*100%);
+    width: calc((624 / 1084) * 100%);
     margin: 30px 0;
     padding: 30px 55px;
     font-size: min((20 / 1084) * 100vw, 20px);
@@ -469,7 +551,7 @@ input[type=checkbox]:checked + span:after {
   .gnav {
     display: block;
     padding: 1em;
-    background: #F5EFD7;
+    background: #f5efd7;
     font-size: min((20 / 1084) * 100vw, 20px);
   }
 
@@ -478,10 +560,10 @@ input[type=checkbox]:checked + span:after {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .gnav__item {
@@ -493,8 +575,8 @@ input[type=checkbox]:checked + span:after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-decoration: none;
   }
   .gnav__link::before {
@@ -506,11 +588,15 @@ input[type=checkbox]:checked + span:after {
     background: url(../img/ico_paw.svg) center center/contain no-repeat;
     vertical-align: middle;
   }
-  .gnav__link:hover, .gnav__link:active, .gnav__link[aria-current] {
-    color: #A88E25;
+  .gnav__link:hover,
+  .gnav__link:active,
+  .gnav__link[aria-current] {
+    color: #a88e25;
     font-weight: bold;
   }
-  .gnav__link:hover::before, .gnav__link:active::before, .gnav__link[aria-current]::before {
+  .gnav__link:hover::before,
+  .gnav__link:active::before,
+  .gnav__link[aria-current]::before {
     background-image: url(../img/ico_paw_o.svg);
   }
 }
@@ -526,27 +612,28 @@ input[type=checkbox]:checked + span:after {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 70px;
   height: 70px;
   padding-top: 15px;
   border: 0;
   border-radius: 50%;
-  background: #341E12;
+  background: #341e12;
   color: #ffffff;
   cursor: pointer;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.hamburger:hover, .hamburger:focus-visible {
-  background: #CEB967;
+.hamburger:hover,
+.hamburger:focus-visible {
+  background: #ceb967;
 }
 
 .hamburger__line {
@@ -586,20 +673,20 @@ input[type=checkbox]:checked + span:after {
 
 /*閉じる*/
 /*aria-expandedの状態でスタイルを適用*/
-.hamburger[aria-expanded=true] .hamburger__line {
+.hamburger[aria-expanded="true"] .hamburger__line {
   background: transparent;
 }
 
-.hamburger[aria-expanded=true] .hamburger__line::before {
+.hamburger[aria-expanded="true"] .hamburger__line::before {
   top: 0;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.hamburger[aria-expanded=true] .hamburger__line::after {
+.hamburger[aria-expanded="true"] .hamburger__line::after {
   bottom: 0;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 768px), print {
@@ -677,7 +764,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   overflow-y: auto;
   width: 100%;
   height: 100%;
-  background: #F5EFD7;
+  background: #f5efd7;
 }
 .spmenu__inner {
   padding: 28px 20px;
@@ -692,12 +779,13 @@ class名は分けてあるので将来的に個別に指定することになっ
 ------------------------------------------------------ */
 .footer {
   position: relative;
-  background: #341E12;
+  background: #341e12;
   color: #ffffff;
   text-align: center;
 }
-.footer a:hover, .footer a:active {
-  color: #CEB967;
+.footer a:hover,
+.footer a:active {
+  color: #ceb967;
 }
 
 .footer__inner {
@@ -746,7 +834,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   padding-left: 20px;
   padding-right: 20px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 .breadcrumb a {
   font-size: 12px;
@@ -778,7 +866,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: inline-block;
   width: 40px;
   height: 32px;
-  background: url(../img/ico_paw02.svg) 0 0/contain no-repeat;
+  background: url(../img/ico_paw02.svg) 0 0 / contain no-repeat;
 }
 .page-title + * {
   margin-top: 40px;
@@ -794,7 +882,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 .page-title__sub {
   display: block;
   margin-top: 10px;
-  color: #CEB967;
+  color: #ceb967;
   font-size: 15px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -845,12 +933,13 @@ class名は分けてあるので将来的に個別に指定することになっ
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #341E12;
+  background: #341e12;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.pagetop a:hover, .pagetop a:focus {
-  background-color: #CEB967;
+.pagetop a:hover,
+.pagetop a:focus {
+  background-color: #ceb967;
 }
 @media screen and (min-width: 768px), print {
   .pagetop {
@@ -874,7 +963,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   padding-left: 20px;
   padding-right: 20px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 .container._narrow {
   max-width: 800px;
@@ -902,7 +991,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   margin-right: calc(50% - 50vw);
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
-  background: #F5EFD7;
+  background: #f5efd7;
 }
 
 /*セクション付属タイトル*/
@@ -1043,8 +1132,8 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .heading-lv2 + * {
   margin-top: 20px;
@@ -1052,10 +1141,10 @@ class名は分けてあるので将来的に個別に指定することになっ
 
 .heading-lv2__title {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding-bottom: 5px;
-  border-bottom: 2px solid #CEB967;
+  border-bottom: 2px solid #ceb967;
   font-size: 24px;
 }
 
@@ -1113,25 +1202,27 @@ class名は分けてあるので将来的に個別に指定することになっ
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.btn:hover, .btn:focus {
-  background: #F5EFD7;
-  border-color: #CEB967;
-  color: #341E12;
+.btn:hover,
+.btn:focus {
+  background: #f5efd7;
+  border-color: #ceb967;
+  color: #341e12;
 }
 
 /*小ボタン*/
 .s-btn {
   display: inline-block;
   padding: 0 1.5em;
-  background: #341E12;
+  background: #341e12;
   border-radius: 6px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-size: 13px;
 }
-.s-btn:hover, .s-btn:focus {
-  background: #CEB967;
+.s-btn:hover,
+.s-btn:focus {
+  background: #ceb967;
   color: #ffffff;
 }
 @media screen and (min-width: 768px), print {
@@ -1149,13 +1240,14 @@ class名は分けてあるので将来的に個別に指定することになっ
 
 /*アクション系*/
 .btn--action {
-  border-color: #CEB967;
-  background: #CEB967;
+  border-color: #ceb967;
+  background: #ceb967;
   color: #ffffff;
 }
-.btn--action:hover, .btn--action:focus {
-  border-color: #CEB967;
-  background: #CEB967;
+.btn--action:hover,
+.btn--action:focus {
+  border-color: #ceb967;
+  background: #ceb967;
   color: #ffffff;
   opacity: 0.7;
 }
@@ -1170,7 +1262,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-right: 2px solid;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   vertical-align: middle;
 }
 
@@ -1183,7 +1275,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-right: 2px solid;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
   vertical-align: middle;
 }
 
@@ -1191,16 +1283,17 @@ class名は分けてあるので将来的に個別に指定することになっ
 .btn--cart {
   padding: 10px;
   border-color: transparent;
-  background: #CEB967;
+  background: #ceb967;
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.btn--cart:hover, .btn--cart:focus {
+.btn--cart:hover,
+.btn--cart:focus {
   border-color: transparent;
-  background: #CEB967;
+  background: #ceb967;
   color: #ffffff;
   opacity: 0.7;
 }
@@ -1221,11 +1314,11 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 80px;
 }
 .btn-center > * + * {
@@ -1235,8 +1328,8 @@ class名は分けてあるので将来的に個別に指定することになっ
   .btn-center {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .btn-center > * + * {
     margin-top: 0;
@@ -1250,13 +1343,13 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: inline-block;
   min-width: 92px;
   padding: 4px 10px;
-  background: #F5EFD7;
+  background: #f5efd7;
   font-size: 12px;
   line-height: 1;
   text-align: center;
 }
 .tag--new {
-  background: #F7320E;
+  background: #f7320e;
   color: #ffffff;
   font-weight: bold;
 }
@@ -1268,16 +1361,16 @@ class名は分けてあるので将来的に個別に指定することになっ
 }
 .table th {
   padding: 20px;
-  border: 1px solid #CEB967;
+  border: 1px solid #ceb967;
   border-right: 0;
-  background: #F5EFD7;
+  background: #f5efd7;
   font-weight: bold;
   text-align: left;
   vertical-align: middle;
 }
 .table td {
   padding: 20px;
-  border: 1px solid #CEB967;
+  border: 1px solid #ceb967;
   border-left: 0;
   background: #ffffff;
   text-align: left;
@@ -1289,14 +1382,15 @@ class名は分けてあるので将来的に個別に指定することになっ
   .table._type01 {
     font-size: 12px;
   }
-  .table._type01 th, .table._type01 td {
+  .table._type01 th,
+  .table._type01 td {
     padding: 10px 15px;
   }
 }
 
 /* tab
 ------------------------------------------------------ */
-[role=tabpanel][aria-hidden=true] {
+[role="tabpanel"][aria-hidden="true"] {
   display: none;
 }
 
@@ -1333,7 +1427,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 /* お知らせ
 ------------------------------------------------------ */
 .news {
-  border-top: 1px dashed #CEB967;
+  border-top: 1px dashed #ceb967;
   line-height: 1.5;
 }
 
@@ -1343,10 +1437,10 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 15px 0;
-  border-bottom: 1px dashed #CEB967;
+  border-bottom: 1px dashed #ceb967;
 }
 
 .news__link {
@@ -1357,11 +1451,11 @@ class名は分けてあるので将来的に個別に指定することになっ
   .news__item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 20px 0;
   }
 
@@ -1370,13 +1464,13 @@ class名は分けてあるので将来的に個別に指定することになっ
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .news__date {
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 110px;
   }
 
@@ -1394,23 +1488,23 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 20px 15px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
 
 .pd-card__thumb {
   position: relative;
   overflow: hidden;
   -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 .pd-card__thumb::before {
   content: "";
   display: block;
-  padding-top: calc((190/318)*100%);
+  padding-top: calc((190 / 318) * 100%);
 }
 .pd-card__thumb > img {
   position: absolute;
@@ -1419,7 +1513,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .pd-card__title {
@@ -1456,7 +1550,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   left: -30px;
   top: 15px;
   width: 120px;
-  background: #F7320E;
+  background: #f7320e;
   padding: 5px;
   color: #ffffff;
   font-size: 14px;
@@ -1464,7 +1558,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   text-align: center;
   line-height: 1;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* 商品カテゴリー
@@ -1474,21 +1568,22 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #DDDDDD;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #dddddd;
   text-decoration: none;
   line-height: 1.5;
 }
-.pd-category:hover, .pd-category:focus {
-  background: #F5EFD7;
-  border-color: #CEB967;
-  color: #341E12;
+.pd-category:hover,
+.pd-category:focus {
+  background: #f5efd7;
+  border-color: #ceb967;
+  color: #341e12;
 }
 
 .pd-category__thumb {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: min((120 / 375) * 100vw, 120px);
 }
 
@@ -1505,8 +1600,8 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -1524,7 +1619,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 
 .rentalbox__title {
   padding: 10px;
-  background: #341E12;
+  background: #341e12;
   color: #ffffff;
 }
 
@@ -1552,11 +1647,11 @@ class名は分けてあるので将来的に個別に指定することになっ
   .rentalbox {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     max-width: none;
   }
   .rentalbox + .rentalbox {
@@ -1564,12 +1659,12 @@ class名は分けてあるので将来的に個別に指定することになっ
   }
 
   .rentalbox__thumb {
-    width: calc((440/1084)*100%);
+    width: calc((440 / 1084) * 100%);
   }
 
   .rentalbox__body {
     margin-top: 0;
-    width: calc((624/1084)*100%);
+    width: calc((624 / 1084) * 100%);
   }
 
   .rentalbox__title {
@@ -1607,8 +1702,8 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 40px;
 }
 .profile__sns > li {
@@ -1636,14 +1731,14 @@ class名は分けてあるので将来的に個別に指定することになっ
 .category__link {
   display: block;
   padding: 10px;
-  background: #F5EFD7;
+  background: #f5efd7;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   line-height: 1.2;
 }
 .category__link[aria-current] {
-  background: #CEB967;
+  background: #ceb967;
   color: #ffffff;
   font-weight: bold;
 }
@@ -1651,7 +1746,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 /*for PC*/
 @media screen and (min-width: 768px), print {
   .category {
-    border-bottom: 5px solid #CEB967;
+    border-bottom: 5px solid #ceb967;
   }
   .category + * {
     margin-top: 50px;
@@ -1673,8 +1768,8 @@ class名は分けてあるので将来的に個別に指定することになっ
 
   .category__link {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     padding: 20px 5px 15px;
     border-radius: 6px 6px 0 0;
     font-size: 16px;
@@ -1690,34 +1785,34 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .pagination .page-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: min((40 / 375) * 100vw, 40px);
   height: min((40 / 375) * 100vw, 40px);
   margin: 0 2px;
   padding: 0 0.5em;
-  background: #F5EFD7;
+  background: #f5efd7;
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
   font-size: min((14 / 375) * 100vw, 14px);
 }
 .pagination .page-numbers.current {
-  background: #CEB967;
+  background: #ceb967;
   color: #ffffff;
 }
 .pagination .page-numbers.dots {
@@ -1736,7 +1831,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-left: 2px solid;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   vertical-align: middle;
 }
 .pagination .page-numbers.next {
@@ -1750,7 +1845,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-right: 2px solid;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   vertical-align: middle;
 }
 
@@ -1765,14 +1860,15 @@ class名は分けてあるので将来的に個別に指定することになっ
     margin: 0 5px;
     font-size: 18px;
   }
-  .pagination .page-numbers.prev, .pagination .page-numbers.next {
+  .pagination .page-numbers.prev,
+  .pagination .page-numbers.next {
     padding: 0 1.5em;
   }
 }
 /* ブログ一覧
 ------------------------------------------------------ */
 .blog-list {
-  border-top: 1px dashed #CEB967;
+  border-top: 1px dashed #ceb967;
 }
 
 .blog-list__item {
@@ -1781,16 +1877,16 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 20px 0;
-  border-bottom: 1px dashed #CEB967;
+  border-bottom: 1px dashed #ceb967;
 }
 
 .blog-list__title {
@@ -1804,28 +1900,28 @@ class名は分けてあるので将来的に個別に指定することになっ
 
 .blog-list__thumb {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   margin-right: 20px;
-  background: #F5EFD7;
-  color: #CEB967;
+  background: #f5efd7;
+  color: #ceb967;
   font-weight: bold;
 }
 .blog-list__thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px), print {
@@ -1855,7 +1951,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   .blog-list__thumb {
     overflow: hidden;
     position: relative;
-    width: calc((318/1084)*100%);
+    width: calc((318 / 1084) * 100%);
     height: auto;
     margin-right: 30px;
     font-size: 30px;
@@ -1863,7 +1959,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   .blog-list__thumb::before {
     content: "";
     display: block;
-    padding-top: calc((190/318)*100%);
+    padding-top: calc((190 / 318) * 100%);
   }
   .blog-list__thumb img {
     position: absolute;
@@ -1949,7 +2045,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 .post-body h2 {
   margin-top: 80px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #CEB967;
+  border-bottom: 2px solid #ceb967;
   font-size: 24px;
 }
 .post-body h2 + * {
@@ -1967,7 +2063,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 .post-body h3 {
   margin-top: 40px;
   padding-left: 20px;
-  border-left: 4px solid #CEB967;
+  border-left: 4px solid #ceb967;
   font-size: 20px;
 }
 .post-body h3 + * {
@@ -1984,7 +2080,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 }
 .post-body h4 {
   margin-top: 30px;
-  color: #A88E25;
+  color: #a88e25;
   font-size: 18px;
 }
 .post-body h4 + * {
@@ -2044,7 +2140,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #CEB967;
+  background: #ceb967;
 }
 .post-body ol > li {
   margin-top: 1.5em;
@@ -2057,15 +2153,15 @@ class名は分けてあるので将来的に個別に指定することになっ
 }
 .post-body table th {
   padding: 20px;
-  border: 1px solid #CEB967;
-  background: #F5EFD7;
+  border: 1px solid #ceb967;
+  background: #f5efd7;
   font-weight: bold;
   text-align: left;
   vertical-align: middle;
 }
 .post-body table td {
   padding: 20px;
-  border: 1px solid #CEB967;
+  border: 1px solid #ceb967;
   background: #ffffff;
   text-align: left;
   vertical-align: middle;
@@ -2123,15 +2219,15 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 142px;
   height: 50px;
   border-radius: 6px;
-  background: #F5EFD7;
+  background: #f5efd7;
   font-size: 18px;
   text-decoration: none;
 }
@@ -2146,7 +2242,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-right: 2px solid;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 .post-nav__btn._next {
   grid-area: next;
@@ -2160,7 +2256,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   border-top: 2px solid;
   border-right: 2px solid;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .post-nav__back {
@@ -2175,7 +2271,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   .post-nav__back {
     margin-top: 0;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
 
@@ -2206,7 +2302,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 }
 
 .pd-detail__info {
-  border: 1px solid #CEB967;
+  border: 1px solid #ceb967;
   padding: 20px;
 }
 
@@ -2230,10 +2326,11 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: block;
   border: 5px solid transparent;
 }
-.pd-mv__thumbs a[aria-selected=true] {
-  border-color: #CEB967;
+.pd-mv__thumbs a[aria-selected="true"] {
+  border-color: #ceb967;
 }
-.pd-mv__thumbs a:hover, .pd-mv__thumbs a:focus {
+.pd-mv__thumbs a:hover,
+.pd-mv__thumbs a:focus {
   opacity: 0.7;
 }
 @media screen and (min-width: 768px), print {
@@ -2277,7 +2374,7 @@ class名は分けてあるので将来的に個別に指定することになっ
   font-size: 20px;
 }
 .cart-box__price strong {
-  color: #F7320E;
+  color: #f7320e;
   font-size: 28px;
 }
 .cart-box__price small {
@@ -2297,7 +2394,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 .cart-box._bottom {
   margin-top: 80px;
   padding: 15px;
-  border: 1px solid #CEB967;
+  border: 1px solid #ceb967;
 }
 @media screen and (min-width: 768px), print {
   .cart-box._bottom {
@@ -2309,8 +2406,8 @@ class名は分けてあるので将来的に個別に指定することになっ
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .cart-box._bottom .cart-box__variation .cart {
     width: 46.875%;
@@ -2328,20 +2425,20 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .cart-box._single .cart-box__body {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .cart-box._single .cart-box__thumb {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 100px;
   margin-right: 20px;
 }
@@ -2392,12 +2489,12 @@ class名は分けてあるので将来的に個別に指定することになっ
 
   .cart__label {
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .cart__btn {
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
 @media screen and (min-width: 768px), print {
@@ -2409,12 +2506,12 @@ class名は分けてあるので将来的に個別に指定することになっ
 
   .cart__label {
     -ms-flex-item-align: end;
-        align-self: end;
+    align-self: end;
   }
 
   .cart__btn {
     -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
   }
 }
 @media screen and (min-width: 992px), print {
@@ -2426,12 +2523,12 @@ class名は分けてあるので将来的に個別に指定することになっ
 
   .cart__label {
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .cart__btn {
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
 /*バリエーションなし*/
@@ -2440,14 +2537,14 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 20px;
 }
 .cart-box._single .cart__btn {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 /* ねこ店員紹介
@@ -2458,8 +2555,8 @@ class名は分けてあるので将来的に個別に指定することになっ
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .staff + .staff {
   margin-top: 50px;
@@ -2473,7 +2570,7 @@ class名は分けてあるので将来的に個別に指定することになっ
 .staff__body {
   margin-right: -20px;
   padding: 30px 20px 50px;
-  background: #F5EFD7;
+  background: #f5efd7;
 }
 
 .staff__title {
@@ -2501,16 +2598,16 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   .staff {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: 130px;
-    background: #F5EFD7;
+    background: #f5efd7;
   }
   .staff + .staff {
     margin-top: 160px;
@@ -2518,7 +2615,7 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
   .staff__body {
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 50%;
     margin: 0;
     padding: 40px;
@@ -2527,20 +2624,20 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
   .staff__ph {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     margin: 0;
     margin-left: calc(50% - 50vw);
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
 
   /*反転タイプ*/
   .staff._reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .staff._reverse .staff__ph {
     margin-left: 0;
@@ -2587,10 +2684,10 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 15px 10px;
-  background: #F5EFD7;
+  background: #f5efd7;
   font-weight: bold;
   text-align: left;
   cursor: pointer;
@@ -2598,8 +2695,8 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
 .faq__q-icon {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
-  color: #CEB967;
+  flex-shrink: 0;
+  color: #ceb967;
   font-size: 30px;
   line-height: 1;
   vertical-align: middle;
@@ -2607,22 +2704,23 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
 .faq__q-text {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .faq__action {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   position: relative;
   display: block;
   width: 20px;
   height: 20px;
   margin-left: auto;
 }
-.faq__action::before, .faq__action::after {
+.faq__action::before,
+.faq__action::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2637,11 +2735,11 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 }
 .faq__action::after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-.faq__question[aria-expanded=true] .faq__action::after {
+.faq__question[aria-expanded="true"] .faq__action::after {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
 }
 
 @media screen and (min-width: 768px), print {
@@ -2673,7 +2771,7 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
 .faq__a-icon {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 1;
@@ -2702,8 +2800,8 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 .contact {
   margin-top: -1px;
   padding: 30px 0;
-  border-top: 1px dashed #CEB967;
-  border-bottom: 1px dashed #CEB967;
+  border-top: 1px dashed #ceb967;
+  border-bottom: 1px dashed #ceb967;
 }
 
 /*入力エリア*/
@@ -2722,7 +2820,7 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   display: inline-block;
   margin-left: 30px;
   padding: 0 15px;
-  background: #F7320E;
+  background: #f7320e;
   color: #fff;
   font-weight: normal;
   font-size: 12px;
@@ -2740,10 +2838,10 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 .error-text {
   display: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 16px;
-  color: #F7320E;
+  color: #f7320e;
   font-weight: bold;
 }
 
@@ -2774,21 +2872,21 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .buttonAction {
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   display: block;
   margin: 0;
   padding: 20px;
   width: 100%;
   max-width: 400px;
-  border: 2px solid #FF7600;
-  background: #FF7600;
+  border: 2px solid #ff7600;
+  background: #ff7600;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -2810,7 +2908,7 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   margin-left: -20px;
   margin-right: -20px;
   padding: 60px 20px;
-  background: #F5EFD7;
+  background: #f5efd7;
 }
 @media screen and (min-width: 768px), print {
   .message {
@@ -2848,7 +2946,7 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -2904,4 +3002,4 @@ Chapter2の章末練習問題に出てきた類似のレイアウトのように
 
 .ta-c {
   text-align: center;
-}/*# sourceMappingURL=common.css.map */
+} /*# sourceMappingURL=common.css.map */
