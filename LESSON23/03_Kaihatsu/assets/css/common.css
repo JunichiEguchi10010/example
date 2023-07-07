@@ -600,3 +600,97 @@ input[type="checkbox"]:checked + span:after {
     background-image: url(../img/ico_paw_o.svg);
   }
 }
+/* hamburger
+------------------------------------------------------ */
+.hamburger {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: #341e12;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.hamburger:hover,
+.hamburger:focus-visible {
+  background: #ceb967;
+}
+
+.hamburger__line {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+.hamburger__line::before,
+.hamburger__line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hamburger__line::before {
+  top: -9px;
+}
+
+.hamburger__line::after {
+  bottom: -9px;
+}
+
+.hamburger__txt {
+  margin-top: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/*閉じる*/
+/*aria-expandedの状態でスタイルを適用*/
+.hamburger[aria-expanded="true"] .hamburger__line {
+  background: transparent;
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 768px), print {
+  .hamburger {
+    display: none;
+  }
+}
