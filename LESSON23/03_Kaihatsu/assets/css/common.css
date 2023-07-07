@@ -694,3 +694,417 @@ input[type="checkbox"]:checked + span:after {
     display: none;
   }
 }
+/* menu (spmenu / ftmenu)
+------------------------------------------------------ */
+/*ヘッダー・フッターのSP用メニュースタイルが同じなので、共通するスタイルだけまとめて記述しています。
+class名は分けてあるので将来的に個別に指定することになったら分離します。*/
+.spmenu__logo,
+.footer__logo {
+  width: 76px;
+  height: 103px;
+  margin: auto;
+}
+
+.spmenu__list,
+.ftmenu {
+  margin-top: 34px;
+  border-top: 1px dashed;
+}
+
+.spmenu__item,
+.ftmenu__item {
+  border-bottom: 1px dashed;
+}
+
+.spmenu__link,
+.ftmenu__link {
+  display: block;
+  padding: 10px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.spmenu-s,
+.ftmenu-s {
+  margin-top: 45px;
+  line-height: 1;
+  text-align: center;
+}
+
+.spmenu-s__item,
+.ftmenu-s__item {
+  display: inline-block;
+}
+.spmenu-s__item:not(:first-child),
+.ftmenu-s__item:not(:first-child) {
+  border-left: 1px solid;
+}
+
+.spmenu-s__link,
+.ftmenu-s__link {
+  display: block;
+  padding: 0 5px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* spmenu
+------------------------------------------------------ */
+.spmenu {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  background: #f5efd7;
+}
+.spmenu__inner {
+  padding: 28px 20px;
+}
+@media screen and (min-width: 768px), print {
+  .spmenu {
+    display: none !important;
+  }
+}
+
+/* footer
+------------------------------------------------------ */
+.footer {
+  position: relative;
+  background: #341e12;
+  color: #ffffff;
+  text-align: center;
+}
+.footer a:hover,
+.footer a:active {
+  color: #ceb967;
+}
+
+.footer__inner {
+  max-width: 1084px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.footer__copyright {
+  margin-top: 60px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px), print {
+  .ftmenu {
+    margin-top: 20px;
+    border: 0;
+    line-height: 1;
+  }
+
+  .ftmenu__item {
+    display: inline-block;
+    border: 0;
+  }
+  .ftmenu__item:not(:first-child) {
+    border-left: 1px solid;
+  }
+
+  .ftmenu__link {
+    display: block;
+    padding: 0 5px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .ftmenu-s {
+    margin-top: 10px;
+  }
+}
+/* breadcrumb
+------------------------------------------------------ */
+.breadcrumb {
+  position: relative;
+  max-width: 1084px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.breadcrumb a {
+  font-size: 12px;
+}
+.breadcrumb a[aria-current] {
+  text-decoration: none;
+}
+
+.breadcrumb__list {
+  position: absolute;
+}
+
+.breadcrumb__item {
+  display: inline;
+}
+.breadcrumb__item:not(:last-child)::after {
+  content: ">";
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+/* page-title
+------------------------------------------------------ */
+.page-title {
+  text-align: center;
+}
+.page-title::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  background: url(../img/ico_paw02.svg) 0 0 / contain no-repeat;
+}
+.page-title + * {
+  margin-top: 40px;
+}
+
+.page-title__main {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+.page-title__sub {
+  display: block;
+  margin-top: 10px;
+  color: #ceb967;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px), print {
+  .page-title::before {
+    width: 60px;
+    height: 48px;
+  }
+  .page-title + * {
+    margin-top: 60px;
+  }
+
+  .page-title__main {
+    font-size: 40px;
+  }
+
+  .page-title__sub {
+    font-size: 20px;
+  }
+}
+/* page-lead
+------------------------------------------------------ */
+.page-lead + * {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px), print {
+  .page-lead {
+    text-align: center;
+  }
+  .page-lead + * {
+    margin-top: 80px;
+  }
+}
+
+/* pagetop
+------------------------------------------------------ */
+.pagetop {
+  position: absolute;
+  right: 10px;
+  top: -45px;
+  width: 60px;
+  height: 60px;
+}
+.pagetop a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #341e12;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.pagetop a:hover,
+.pagetop a:focus {
+  background-color: #ceb967;
+}
+@media screen and (min-width: 768px), print {
+  .pagetop {
+    width: 80px;
+    height: 80px;
+    right: 30px;
+    top: -60px;
+  }
+  .pagetop a {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* container
+------------------------------------------------------ */
+.container {
+  max-width: 1084px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.container._narrow {
+  max-width: 800px;
+}
+
+/* section
+------------------------------------------------------ */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px), print {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.section:not(.section--bg) + section:not(.section--bg) {
+  padding-top: 0;
+}
+
+.section--bg {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  background: #f5efd7;
+}
+
+/*セクション付属タイトル*/
+.section__title {
+  font-size: 24px;
+  text-align: center;
+}
+.section__title + * {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px), print {
+  .section__title {
+    font-size: 30px;
+  }
+  .section__title + * {
+    margin-top: 40px;
+  }
+}
+
+/*セクション付属リード文*/
+.section__lead + * {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px), print {
+  .section__lead {
+    text-align: center;
+  }
+  .section__lead + * {
+    margin-top: 80px;
+  }
+}
+
+/* contents
+------------------------------------------------------ */
+.main-contents {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.main-contents._home {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-contents._staff {
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px), print {
+  .main-contents {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .main-contents._staff {
+    padding-bottom: 150px;
+  }
+}
+
+/* grid
+------------------------------------------------------ */
+/*IE11非対応案件なのでgridレイアウトを採用*/
+.grid {
+  display: grid;
+  gap: 20px;
+}
+@media screen and (min-width: 576px), print {
+  .grid.pd-card-list {
+    gap: 40px 20px;
+  }
+}
+
+/*PC4カラム用*/
+@media screen and (max-width: 575px) {
+  .grid--pc4col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 576px), print {
+  .grid--pc4col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px), print {
+  .grid--pc4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*PC3カラム*/
+@media screen and (max-width: 575px) {
+  .grid--pc3col {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 576px), print {
+  .grid--pc3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px), print {
+  .grid--pc3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*PC2カラム*/
+.grid--pc2col {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px), print {
+  .grid--pc2col {
+    max-width: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
