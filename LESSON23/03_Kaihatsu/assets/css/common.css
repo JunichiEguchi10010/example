@@ -1108,3 +1108,294 @@ class名は分けてあるので将来的に個別に指定することになっ
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/*------------------------------------------------------------------------
+// Compornent（general）
+  ├ heading
+  ├ btn
+  ├ tag
+  ├ table
+  ├ tab
+  ├ accordion
+  ├ link
+  ├ list
+  ├ txt
+  ├ table
+  └ logo
+------------------------------------------------------------------------*/
+/* heading
+------------------------------------------------------ */
+/*大見出し(h2相当)*/
+.heading-lv2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.heading-lv2 + * {
+  margin-top: 20px;
+}
+
+.heading-lv2__title {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ceb967;
+  font-size: 24px;
+}
+
+.heading-lv2__btn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 768px), print {
+  .heading-lv2 + * {
+    margin-top: 40px;
+  }
+
+  .heading-lv2__title {
+    font-size: 30px;
+  }
+}
+/*ボタン有りの場合*/
+.heading-lv2._btn .heading-lv2__title {
+  padding-right: 90px;
+}
+@media screen and (min-width: 768px), print {
+  .heading-lv2._btn .heading-lv2__title {
+    padding-right: 110px;
+  }
+}
+
+/*猫アイコン有りの場合*/
+.heading-lv2._icon::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 47px;
+  margin-right: 10px;
+  background: url(../img/ico_cat.svg) left bottom/contain no-repeat;
+}
+
+/* button
+------------------------------------------------------ */
+/*button共通*/
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 6px;
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:focus {
+  background: #f5efd7;
+  border-color: #ceb967;
+  color: #341e12;
+}
+
+/*小ボタン*/
+.s-btn {
+  display: inline-block;
+  padding: 0 1.5em;
+  background: #341e12;
+  border-radius: 6px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+.s-btn:hover,
+.s-btn:focus {
+  background: #ceb967;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px), print {
+  .s-btn {
+    font-size: 16px;
+  }
+}
+
+/*大ボタン*/
+.btn--lg {
+  max-width: 400px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*アクション系*/
+.btn--action {
+  border-color: #ceb967;
+  background: #ceb967;
+  color: #ffffff;
+}
+.btn--action:hover,
+.btn--action:focus {
+  border-color: #ceb967;
+  background: #ceb967;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+/*アイコン*/
+.btn--next::after {
+  content: "";
+  display: inline-block;
+  width: 0.57em;
+  height: 0.57em;
+  margin-left: 0.2em;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+.btn--back::before {
+  content: "";
+  display: inline-block;
+  width: 0.57em;
+  height: 0.57em;
+  margin-right: 0.2em;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  vertical-align: middle;
+}
+
+/*カートボタン*/
+.btn--cart {
+  padding: 10px;
+  border-color: transparent;
+  background: #ceb967;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn--cart:hover,
+.btn--cart:focus {
+  border-color: transparent;
+  background: #ceb967;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.btn--cart::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url(../img/ico_cart.svg) center center/contain no-repeat;
+  vertical-align: middle;
+}
+
+/*中央配置ボタン*/
+.btn-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.btn-center > * + * {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px), print {
+  .btn-center {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .btn-center > * + * {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+/* tag
+------------------------------------------------------ */
+.tag {
+  display: inline-block;
+  min-width: 92px;
+  padding: 4px 10px;
+  background: #f5efd7;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
+.tag--new {
+  background: #f7320e;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* table
+------------------------------------------------------ */
+.table {
+  width: 100%;
+}
+.table th {
+  padding: 20px;
+  border: 1px solid #ceb967;
+  border-right: 0;
+  background: #f5efd7;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}
+.table td {
+  padding: 20px;
+  border: 1px solid #ceb967;
+  border-left: 0;
+  background: #ffffff;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/*type01:そのまま縮小表示*/
+@media screen and (max-width: 575px) {
+  .table._type01 {
+    font-size: 12px;
+  }
+  .table._type01 th,
+  .table._type01 td {
+    padding: 10px 15px;
+  }
+}
+
+/* tab
+------------------------------------------------------ */
+[role="tabpanel"][aria-hidden="true"] {
+  display: none;
+}
+
+/* accordion
+------------------------------------------------------ */
+.accordion__panel {
+  display: none;
+}
