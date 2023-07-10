@@ -1399,3 +1399,30 @@ class名は分けてあるので将来的に個別に指定することになっ
 .accordion__panel {
   display: none;
 }
+
+/*------------------------------------------------------------------------
+// Compornent（original）
+  ├ news
+  ├ pd-card
+  ├ pd-category
+  ├ rentalbox
+  ├ profile
+  ├ category
+  ├ pagination
+  ├ blog-list
+  ├ post-header
+  ├ post-intro
+  ├ post-body
+  ├ post-nav
+  ├ pd-detial
+  ├ pd-mv
+  ├ cart-box
+  ├ cart
+  ├ staff
+  ├ faq
+  ├ contact
+  ├ message
+  └ logo
+------------------------------------------------------------------------*/
+/* お知らせ
+------------------------------------------------------ */
