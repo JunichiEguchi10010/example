@@ -1560,3 +1560,34 @@ class名は分けてあるので将来的に個別に指定することになっ
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+/* 商品カテゴリー
+------------------------------------------------------ */
+.pd-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #dddddd;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.pd-category:hover,
+.pd-category:focus {
+  background: #f5efd7;
+  border-color: #ceb967;
+  color: #341e12;
+}
+
+.pd-category__thumb {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: min((120 / 375) * 100vw, 120px);
+}
+
+.pd-category__title {
+  padding: 10px 10px 10px 20px;
+  font-size: min((16 / 375) * 100vw, 18px);
+}
